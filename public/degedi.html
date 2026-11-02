@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DEGEDI A.C. · Grupo de Estudios sobre Derechos, Géneros y Diversidades</title>
+<meta name="description" content="DEGEDI A.C.: talleres, capacitaciones y acompañamiento sobre sexualidad, género, diversidad sexual, ILE y derechos humanos en la Ciudad de México.">
+<meta name="referrer" content="no-referrer">
+<style>
+:root{
+  --bg:#fbf9f5;--card:#ffffff;--text:#212121;--text2:#555555;
+  --blue:#3a6a8a;--coral:#b94a40;--border:#ece6dc;
+  --shadow:0 2px 6px rgba(60,40,20,.06),0 8px 24px rgba(60,40,20,.07);
+  --alert-bg:#fdecea;--alert-border:#b3261e;--alert-text:#8c1d18;
+  --exit:#555555;--focus:#3a6a8a;
+  --wa:#2e7d32;--mail:#3a6a8a;--ig:#a8235a;--fb:#1565c0;
+  --grad:linear-gradient(90deg,#df6d62,#f4a261 35%,#e9c46a 70%,#457b9d);
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#1a1816;--card:#262320;--text:#f2eee8;--text2:#c9c2b8;
+    --blue:#8fbbd9;--coral:#f0958a;--border:#3a3530;
+    --shadow:0 2px 8px rgba(0,0,0,.35);
+    --alert-bg:#3d1b18;--alert-border:#f2b8b5;--alert-text:#ffdad6;
+    --focus:#8fbbd9;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6;padding-bottom:env(safe-area-inset-bottom)}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--card);color:var(--text);padding:.75rem 1rem;z-index:100}
+.skip:focus{left:1rem;top:4rem}
+
+.exitbar{position:sticky;top:0;z-index:50;background:var(--bg);display:flex;justify-content:flex-end;padding:.4rem max(.75rem,env(safe-area-inset-right)) .4rem max(.75rem,env(safe-area-inset-left));padding-top:max(.4rem,env(safe-area-inset-top));border-bottom:1px solid var(--border)}
+.exit{min-height:44px;background:var(--exit);color:#fff;border:0;border-radius:10px;padding:.4rem 1rem;font:inherit;font-weight:700;font-size:1rem;cursor:pointer;display:inline-flex;align-items:center;gap:.4rem}
+.exit small{font-weight:400;font-size:.8rem}
+
+header.site{text-align:center;padding:1.5rem 1rem .5rem}
+.logo{display:block;width:100%;max-width:260px;margin:0 auto;color:var(--text)}
+.tagline{margin:.25rem auto 0;max-width:30ch;font-size:.82rem;font-weight:700;letter-spacing:.08em;color:var(--text2)}
+
+nav.main{background:var(--bg);padding:.5rem}
+nav.main ul{list-style:none;margin:0 auto;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem;max-width:960px}
+nav.main a{display:inline-flex;align-items:center;min-height:44px;padding:0 .8rem;color:var(--text);text-decoration:none;border-radius:999px;font-weight:600;font-size:.95rem}
+nav.main a:hover{background:var(--card);color:var(--blue)}
+@media (min-width:700px){nav.main{position:sticky;top:61px;z-index:40;border-bottom:1px solid var(--border)}}
+
+.wave{display:block;width:100%;height:28px}
+
+main{max-width:960px;margin:0 auto;padding:1rem max(1rem,env(safe-area-inset-left)) 2rem;display:grid;gap:1.25rem}
+section{scroll-margin-top:130px}
+.card{background:var(--card);border-radius:20px;box-shadow:var(--shadow);padding:1.5rem 1.25rem;border:1px solid var(--border)}
+@media (min-width:700px){.card{padding:2.25rem 2.5rem}}
+h1{font-size:clamp(1.7rem,6vw,2.4rem);line-height:1.2;margin:0 0 1rem}
+h2{font-size:clamp(1.4rem,5vw,1.85rem);line-height:1.25;margin:0 0 1.25rem}
+h2::after{content:"";display:block;width:64px;height:4px;border-radius:4px;background:var(--grad);margin-top:.6rem}
+h3{color:var(--blue);font-size:1.2rem;margin:0 0 .5rem}
+p{margin:0 0 1rem}
+.lead{font-size:1.1rem;color:var(--text2)}
+.muted{color:var(--text2)}
+.question{font-weight:700;font-size:1.15rem;color:var(--coral);margin-top:1.5rem}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:44px;padding:.7rem 1.25rem;border-radius:12px;font-weight:700;text-decoration:none;color:#fff;font-size:1rem;line-height:1.3}
+.btn:hover{filter:brightness(1.08)}
+.btn-primary{background:var(--text);color:var(--bg)}
+.btn-secondary{background:transparent;color:var(--text);border:2px solid var(--text)}
+.btn-wa{background:var(--wa)}.btn-mail{background:var(--mail)}.btn-ig{background:var(--ig)}.btn-fb{background:var(--fb)}
+.choices{display:grid;gap:.75rem}
+@media (min-width:700px){.choices{grid-template-columns:1fr 1fr}}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+
+.info{border-left:4px solid var(--blue);padding:.75rem 1rem;background:var(--bg);border-radius:0 12px 12px 0}
+.alert{margin-top:1.5rem;background:var(--alert-bg);border:2px solid var(--alert-border);color:var(--alert-text);border-radius:14px;padding:1rem 1.25rem;font-weight:700;font-size:1.1rem}
+.alert a{color:inherit}
+.small-center{text-align:center;font-size:.9rem;color:var(--text2);margin-top:.75rem}
+
+.topics{list-style:none;padding:0;margin:1.25rem 0;display:grid;gap:1rem}
+@media (min-width:700px){.topics{grid-template-columns:repeat(3,1fr)}}
+.topics li{background:var(--bg);border-radius:14px;padding:1rem 1.1rem;border:1px solid var(--border)}
+.topics p{margin:0;color:var(--text2)}
+
+.mv{display:grid;gap:1rem}
+@media (min-width:700px){.mv{grid-template-columns:1fr 1fr}}
+.mv article{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:1.25rem}
+.mv p{margin:0}
+
+.contact-grid{display:grid;gap:1.25rem;margin-top:1rem}
+@media (min-width:700px){.contact-grid{grid-template-columns:1fr 1fr}}
+
+footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;color:var(--text2);font-size:.92rem}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="exitbar">
+  <button type="button" class="exit" id="salida" aria-label="Salida rápida: salir de este sitio de inmediato (atajo: presiona Esc dos veces)">
+    Salida rápida <small>(Esc Esc)</small>
+  </button>
+</div>
+
+<header class="site" id="inicio">
+  <svg class="logo" viewBox="0 0 300 130" role="img" aria-label="Logotipo de DEGEDI: una línea ondulada en degradé de coral a azul con puntos como personas en camino, sobre el nombre DEGEDI"><defs><linearGradient id="hg" x1="0" x2="1"><stop offset="0" stop-color="#df6d62"/><stop offset=".35" stop-color="#f4a261"/><stop offset=".7" stop-color="#e9c46a"/><stop offset="1" stop-color="#457b9d"/></linearGradient></defs><path d="M 20 65 Q 85 20, 150 65 Q 215 110, 280 65" fill="none" stroke="url(#hg)" stroke-width="4.5" stroke-linecap="round"/><circle cx="50" cy="45" r="4" fill="#df6d62"/><circle cx="95" cy="30" r="3.5" fill="#f4a261"/><circle cx="150" cy="18" r="4.5" fill="#e9c46a"/><circle cx="225" cy="85" r="4" fill="#457b9d"/><text x="150" y="112" font-family="system-ui,sans-serif" font-weight="800" font-size="34" fill="currentColor" letter-spacing="3.5" text-anchor="middle">DEGEDI</text></svg>
+  <p class="tagline">GRUPO DE ESTUDIOS SOBRE DERECHOS, GÉNEROS Y DIVERSIDADES A.C.</p>
+</header>
+
+<nav class="main" aria-label="Navegación principal">
+  <ul>
+    <li><a href="#portada">Inicio</a></li>
+    <li><a href="#beleguí">Beleguí</a></li>
+    <li><a href="#talleres">Talleres</a></li>
+    <li><a href="#quienes">Quiénes somos</a></li>
+    <li><a href="#mision">Misión y visión</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<svg class="wave" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true" focusable="false"><defs><linearGradient id="wg" x1="0" x2="1"><stop offset="0" stop-color="#df6d62"/><stop offset=".35" stop-color="#f4a261"/><stop offset=".7" stop-color="#e9c46a"/><stop offset="1" stop-color="#457b9d"/></linearGradient></defs><path d="M0 14 Q 75 0 150 14 T 300 14 T 450 14 T 600 14 T 750 14 T 900 14 T 1050 14 T 1200 14" fill="none" stroke="url(#wg)" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+
+<main id="contenido">
+
+<section class="card" id="portada" aria-labelledby="t-portada">
+  <h1 id="t-portada">Te damos la bienvenida a DEGEDI A.C.</h1>
+  <p class="lead">Desde 2014, tejemos redes de apoyo, educación popular y defensa social en la Ciudad de México con perspectiva de género y derechos humanos.</p>
+  <p class="question">¿Qué necesitas hoy?</p>
+  <div class="choices">
+    <a class="btn btn-primary" href="#beleguí">Necesito acompañamiento</a>
+    <a class="btn btn-secondary" href="#talleres">Quiero un taller para mi escuela o institución</a>
+  </div>
+</section>
+
+<section class="card" id="beleguí" aria-labelledby="t-belegui">
+  <h2 id="t-belegui">Beleguí, una línea para acompañarte</h2>
+  <p>Si vives violencia de género, tienes dudas sobre tu sexualidad, necesitas acompañamiento para una Interrupción Legal del Embarazo (ILE) o quieres hablar de diversidad sexual, en Beleguí encontrarás escucha, orientación y acompañamiento. Escríbenos por WhatsApp al 55 4135 0708.</p>
+  <p class="info"><strong>Información de atención:</strong> servicio gratuito, confidencial, abierto las 24 horas y atendido exclusivamente por mensaje.</p>
+  <!-- IMPORTANTE: verificar este enlace de WhatsApp (número y mensaje) antes de publicar. -->
+  <div class="actions">
+    <a class="btn btn-wa" href="https://wa.me/525541350708?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Belegu%C3%AD" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp a Beleguí</a>
+  </div>
+  <p class="alert" role="note">Si estás en peligro inmediato, <a href="tel:911">llama al 911</a>.</p>
+  <p class="small-center">Si compartes este dispositivo, considera borrar el historial de navegación.</p>
+</section>
+
+<section class="card" id="talleres" aria-labelledby="t-talleres">
+  <h2 id="t-talleres">Formación para la autonomía y el tejido social</h2>
+  <p>Compartimos saberes porque creemos que el conocimiento es una herramienta de libertad y de cuidado mutuo. Diseñamos e impartimos talleres, conferencias y capacitaciones para colectivos, instituciones, escuelas, juventudes y público en general, de forma presencial o en línea, sobre sexualidad, género, diversidad sexual, ILE, derechos humanos y bienestar social.</p>
+  <ul class="topics">
+    <li><h3>Diversidad sexual y de género</h3><p>Reflexión crítica y práctica para cuestionar mandatos, reconocer las disidencias y construir espacios libres de LGBTfobia.</p></li>
+    <li><h3>Interrupción Legal del Embarazo (ILE)</h3><p>Talleres informativos, con perspectiva de derechos y sin estigmas, centrados en la autonomía corporal, la salud y el derecho a decidir sobre nuestros cuerpos.</p></li>
+    <li><h3>Género y derechos humanos</h3><p>Herramientas conceptuales y metodológicas para identificar desigualdades estructurales e incorporar la perspectiva de género en la vida cotidiana y profesional.</p></li>
+  </ul>
+  <p>¿Quieres llevar un taller a tu escuela, comunidad o espacio de trabajo? Escríbenos a <a href="mailto:degediac@gmail.com?subject=Cotizaci%C3%B3n%20de%20taller">degediac@gmail.com</a> y armamos una propuesta a la medida.</p>
+  <p class="muted">Los temarios, la duración y el tamaño del grupo se acuerdan por correo.</p>
+  <div class="actions">
+    <a class="btn btn-mail" href="mailto:degediac@gmail.com?subject=Cotizaci%C3%B3n%20de%20taller">Cotizar taller por correo</a>
+  </div>
+</section>
+
+<section class="card" id="quienes" aria-labelledby="t-quienes">
+  <h2 id="t-quienes">Hacemos comunidad desde los derechos</h2>
+  <p>DEGEDI A.C. nació en 2014 con una convicción: defender los derechos humanos de las mujeres y de las diversidades sexo-genéricas. Desde entonces, hace más de diez años, tejemos redes de apoyo, aprendizaje y resistencia en la Ciudad de México.</p>
+  <p>No somos una institución distante: somos personas trabajando con personas. Creemos que el cambio social se construye en el encuentro cotidiano, el diálogo entre iguales y la educación popular.</p>
+  <p>Cada taller, conferencia y espacio de diálogo tiene un propósito: enfrentar las violencias estructurales, abrazar la pluralidad y crear entornos donde todas las personas podamos vivir con dignidad.</p>
+</section>
+
+<section class="card" id="mision" aria-labelledby="t-mision">
+  <h2 id="t-mision">Misión y visión</h2>
+  <div class="mv">
+    <article><h3>Misión</h3><p>Impulsamos procesos de formación, investigación y divulgación desde la perspectiva de género, los derechos humanos y la interseccionalidad, para promover una cultura de derechos, la equidad de género y sociedades libres de discriminación.</p></article>
+    <article><h3>Visión</h3><p>Ser un referente de cercanía y rigor en la educación comunitaria y la defensa social, y fortalecer redes de empatía y autonomía donde el respeto a las diversidades y a los derechos de las mujeres sea la base de la vida en común.</p></article>
+  </div>
+</section>
+
+<section class="card" id="proyectos" aria-labelledby="t-proyectos">
+  <h2 id="t-proyectos">Acompañar y caminar en comunidad</h2>
+  <p>El activismo se sostiene en el cuidado mutuo. En DEGEDI no solo teorizamos: acompañamos procesos sociales y comunitarios en los que personas y grupos encuentran escucha, orientación y herramientas para defender sus derechos.</p>
+  <p>También impulsamos proyectos de investigación situada y divulgación, porque creemos que la ciencia, las humanidades y el activismo deben dialogar con la realidad de las calles y generar datos y narrativas útiles para la justicia social.</p>
+</section>
+
+<section class="card" id="contacto" aria-labelledby="t-contacto">
+  <h2 id="t-contacto">Escríbenos</h2>
+  <p>¿Tienes una duda, quieres sumarte a un taller o proponernos una colaboración? Las puertas de DEGEDI están abiertas.</p>
+  <div class="contact-grid">
+    <div>
+      <h3>Acompañamiento (Beleguí)</h3>
+      <p>WhatsApp 55 4135 0708 (gratuito, confidencial, 24 horas, solo por mensaje).</p>
+      <!-- IMPORTANTE: verificar este enlace de WhatsApp (número y mensaje) antes de publicar. -->
+      <a class="btn btn-wa" href="https://wa.me/525541350708?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Belegu%C3%AD" target="_blank" rel="noopener noreferrer">Contactar a Beleguí por WhatsApp</a>
+    </div>
+    <div>
+      <h3>Cotización de talleres y otros asuntos</h3>
+      <p><a href="mailto:degediac@gmail.com?subject=Cotizaci%C3%B3n%20de%20taller">degediac@gmail.com</a></p>
+      <a class="btn btn-mail" href="mailto:degediac@gmail.com?subject=Cotizaci%C3%B3n%20de%20taller">Enviar correo para cotización</a>
+    </div>
+  </div>
+  <p style="margin-top:1.5rem"><strong>Ubicación:</strong> Ciudad de México.</p>
+  <h3>Redes sociales</h3>
+  <div class="actions">
+    <a class="btn btn-ig" href="https://instagram.com/degediac" target="_blank" rel="noopener noreferrer">Instagram @degediac</a>
+    <a class="btn btn-fb" href="https://www.facebook.com/grupodegedi" target="_blank" rel="noopener noreferrer">Facebook DEGEDI</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p><strong>Aviso de privacidad breve:</strong> este sitio no usa cookies, analíticas, rastreadores ni servicios de terceros, y no te pide datos personales.</p>
+  <p>© 2014-2026 DEGEDI A.C. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+(function(){
+  function salir(){ window.location.replace("https://www.google.com"); }
+  document.getElementById("salida").addEventListener("click", salir);
+  var last = 0;
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" || e.key === "Esc") {
+      var now = Date.now();
+      if (now - last < 500) { salir(); }
+      last = now;
+    }
+  });
+})();
+</script>
+</body>
+</html>
