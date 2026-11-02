@@ -90,6 +90,15 @@ p{margin:0 0 1rem}
 .contact-grid{display:grid;gap:1.25rem;margin-top:1rem}
 @media (min-width:700px){.contact-grid{grid-template-columns:1fr 1fr}}
 
+.btn svg{flex:none;width:1.25em;height:1.25em}
+
+.gallery{display:grid;gap:1rem;margin-top:1.25rem}
+@media (min-width:700px){.gallery{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:480px) and (max-width:699px){.gallery{grid-template-columns:1fr 1fr}}
+.gallery figure{margin:0;background:var(--bg);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.gallery img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+.gallery figcaption{padding:.6rem .9rem;font-size:.85rem;color:var(--text2)}
+
 footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;color:var(--text2);font-size:.92rem}
 
 @media (prefers-reduced-motion:reduce){
@@ -120,6 +129,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
     <li><a href="#quienes">Quiénes somos</a></li>
     <li><a href="#mision">Misión y visión</a></li>
     <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#galeria">Galería</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
 </nav>
