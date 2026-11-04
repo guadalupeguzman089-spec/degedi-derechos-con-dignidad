@@ -1,9 +1,10 @@
 import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
 // The DEGEDI site is a single static HTML file; the rules below come from the
 // organization itself, so they are checked on the source of truth.
-const html = readFileSync(new URL("../../public/degedi.html", import.meta.url), "utf8");
+const html = readFileSync(join(process.cwd(), "public", "degedi.html"), "utf8");
 
 describe("DEGEDI site content rules", () => {
   it("never mentions a cost in the workshops wording", () => {
