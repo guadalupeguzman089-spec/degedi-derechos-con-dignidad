@@ -34,7 +34,7 @@ Orden: encabezado con logo · menú de navegación · divisor ondulado · Portad
 
 ## CONTACTO (dos canales separados)
 - Acompañamiento (Beleguí): botón de WhatsApp con enlace https://wa.me/525541350708?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Belegu%C3%AD (target="_blank" rel="noopener noreferrer"). Agrega un comentario HTML recordando verificar este enlace antes de publicar. Beleguí se atiende SOLO por mensaje: no pongas enlaces tel: ni frases como "llámanos" para ese número.
-- Cotizar talleres: botón mailto:degediac@gmail.com con asunto prellenado "Cotización de taller" (codificado en URL). No uses WhatsApp para esto.
+- Talleres: botón mailto:degediac@gmail.com con asunto prellenado "Información de taller" (codificado en URL). No uses WhatsApp para esto. La palabra "cotizar" no debe aparecer en el sitio: los botones dicen "Agendar un taller" y "Escribir para agendar un taller".
 - Redes: botón de Instagram a https://instagram.com/degediac y botón de Facebook a https://www.facebook.com/grupodegedi (ambos con target="_blank" rel="noopener noreferrer").
 - Ubicación: solo "Ciudad de México", sin dirección.
 
@@ -44,6 +44,7 @@ HTML semántico (header, nav, main, section, footer), jerarquía de encabezados 
 ## REGLAS DE CONTENIDO
 - Usa EXACTAMENTE los textos de abajo. Puedes decidir la maquetación, pero no reescribas ni agregues contenido propio.
 - NO inventes testimonios, cifras, nombres de instituciones aliadas, fotografías, horarios, precios ni servicios. No agregues datos que no estén aquí.
+- Las ilustraciones decorativas de las secciones (src/assets/*.asset.json, prefijo portada-/belegui-/talleres-/quienes-/mision-/vision-/proyectos-) son ilustraciones generadas, no fotografías de actividades reales: no las presentes como documentación. Las fotografías reales solo van en la galería.
 - No uses comillas ni apóstrofes rectos dentro del texto visible; usa tipografía correcta.
 
 ## TEXTOS
@@ -67,7 +68,7 @@ Compartimos saberes porque creemos que el conocimiento es una herramienta de lib
 - Género y derechos humanos: herramientas conceptuales y metodológicas para identificar desigualdades estructurales e incorporar la perspectiva de género en la vida cotidiana y profesional.
 ¿Quieres llevar un taller a tu escuela, comunidad o espacio de trabajo? Escríbenos a degediac@gmail.com y armamos una propuesta a la medida.
 Los temarios, la duración y el tamaño del grupo se acuerdan por correo.
-Botón: Cotizar taller por correo
+Botón: Agendar un taller
 
 [QUIÉNES SOMOS]
 Título: Hacemos comunidad desde los derechos
@@ -89,7 +90,7 @@ También impulsamos proyectos de investigación situada y divulgación, porque c
 Título: Escríbenos
 ¿Tienes una duda, quieres sumarte a un taller o proponernos una colaboración? Las puertas de DEGEDI están abiertas.
 Acompañamiento (Beleguí): WhatsApp 55 4135 0708 (gratuito, confidencial, 24 horas, solo por mensaje). Botón: Contactar a Beleguí por WhatsApp.
-Cotización de talleres y otros asuntos: degediac@gmail.com. Botón: Enviar correo para cotización.
+Talleres y otros asuntos: degediac@gmail.com. Botón: Escribir para agendar un taller.
 Ubicación: Ciudad de México.
 Redes sociales: botones de Instagram @degediac y Facebook DEGEDI.
 
