@@ -45,6 +45,7 @@ HTML semántico (header, nav, main, section, footer), jerarquía de encabezados 
 - Usa EXACTAMENTE los textos de abajo. Puedes decidir la maquetación, pero no reescribas ni agregues contenido propio.
 - NO inventes testimonios, cifras, nombres de instituciones aliadas, fotografías, horarios, precios ni servicios. No agregues datos que no estén aquí.
 - Las ilustraciones decorativas de las secciones (src/assets/*.asset.json, prefijo portada-/belegui-/talleres-/quienes-/mision-/vision-/proyectos-) son ilustraciones generadas, no fotografías de actividades reales: no las presentes como documentación. Las fotografías reales solo van en la galería.
+- Paleta de las ilustraciones según el tema: violencia de género e ILE (Beleguí, Misión, Proyectos) en morado y verde; diversidad sexual LGBT (Portada, Talleres, Quiénes somos, Visión) en colores del orgullo arcoíris con toques celeste y rosa de la bandera trans. Deben aludir al tema (pañuelo verde, puño morado, banderas del orgullo), mantener el fondo crema y no llevar texto dentro.
 - No uses comillas ni apóstrofes rectos dentro del texto visible; usa tipografía correcta.
 
 ## TEXTOS
