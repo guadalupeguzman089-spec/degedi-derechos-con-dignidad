@@ -99,6 +99,11 @@ p{margin:0 0 1rem}
 .gallery img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
 .gallery figcaption{padding:.6rem .9rem;font-size:.85rem;color:var(--text2)}
 
+.art{margin:0 0 1.25rem;border-radius:16px;overflow:hidden;border:1px solid var(--border)}
+.art img{display:block;width:100%;height:auto}
+.mv-art{display:block;width:100%;height:150px;object-fit:cover;border-radius:12px;border:1px solid var(--border);margin:0 0 1rem}
+@media (min-width:700px){.mv-art{height:190px}}
+
 footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;color:var(--text2);font-size:.92rem}
 
 @media (prefers-reduced-motion:reduce){
@@ -141,6 +146,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 <section class="card" id="portada" aria-labelledby="t-portada">
   <h1 id="t-portada">Te damos la bienvenida a DEGEDI A.C.</h1>
   <p class="lead">Desde 2014, tejemos redes de apoyo, educación popular y defensa social en la Ciudad de México con perspectiva de género y derechos humanos.</p>
+  <figure class="art"><img src="/__l5e/assets-v1/f747d6e8-1f9e-4e80-acf0-18aecc634031/portada-comunidad-camino.jpg" alt="Ilustración de un grupo diverso de personas de distintas edades caminando juntas por un camino que sube, con banderines y flores de cempasúchil" width="1536" height="640"></figure>
   <p class="question">¿Qué necesitas hoy?</p>
   <div class="choices">
     <a class="btn btn-primary" href="#beleguí">Necesito acompañamiento</a>
@@ -150,6 +156,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 
 <section class="card" id="beleguí" aria-labelledby="t-belegui">
   <h2 id="t-belegui">Beleguí, una línea para acompañarte</h2>
+  <figure class="art"><img src="/__l5e/assets-v1/0b3eaab1-b6f9-456b-af9e-7682e2da708a/belegui-escucha.jpg" alt="Ilustración de una mano que sostiene un teléfono del que salen mensajes vacíos, mientras otra mano la acompaña" width="1280" height="560" loading="lazy"></figure>
   <p>Si vives violencia de género, tienes dudas sobre tu sexualidad, necesitas acompañamiento para una Interrupción Legal del Embarazo (ILE) o quieres hablar de diversidad sexual, en Beleguí encontrarás escucha, orientación y acompañamiento. Escríbenos por WhatsApp al 55 4135 0708.</p>
   <p class="info"><strong>Información de atención:</strong> servicio gratuito, confidencial, abierto las 24 horas y atendido exclusivamente por mensaje.</p>
   <!-- IMPORTANTE: verificar este enlace de WhatsApp (número y mensaje) antes de publicar. -->
@@ -163,6 +170,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 <section class="card" id="talleres" aria-labelledby="t-talleres">
   <h2 id="t-talleres">Formación para la autonomía y el tejido social</h2>
   <p>Compartimos saberes porque creemos que el conocimiento es una herramienta de libertad y de cuidado mutuo. Diseñamos e impartimos talleres, conferencias y capacitaciones para colectivos, instituciones, escuelas, juventudes y público en general, de forma presencial o en línea, sobre sexualidad, género, diversidad sexual, ILE, derechos humanos y bienestar social.</p>
+  <figure class="art"><img src="/__l5e/assets-v1/73e3d63e-4041-4e1f-ba1e-9cdc3dd47099/talleres-circulo.jpg" alt="Ilustración de un taller comunitario: ocho personas sentadas en círculo mientras una facilitadora explica junto a un caballete" width="1280" height="560" loading="lazy"></figure>
   <ul class="topics">
     <li><h3>Diversidad sexual y de género</h3><p>Reflexión crítica y práctica para cuestionar mandatos, reconocer las disidencias y construir espacios libres de LGBTfobia.</p></li>
     <li><h3>Interrupción Legal del Embarazo (ILE)</h3><p>Talleres informativos, con perspectiva de derechos y sin estigmas, centrados en la autonomía corporal, la salud y el derecho a decidir sobre nuestros cuerpos.</p></li>
@@ -177,6 +185,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 
 <section class="card" id="quienes" aria-labelledby="t-quienes">
   <h2 id="t-quienes">Hacemos comunidad desde los derechos</h2>
+  <figure class="art"><img src="/__l5e/assets-v1/47a7c9f4-d4dc-4487-a451-bca442be4353/quienes-manos-red.jpg" alt="Ilustración de manos de distintos tonos de piel unidas en el centro, bajo una red de puntos conectados por un hilo de colores" width="1280" height="560" loading="lazy"></figure>
   <p>DEGEDI A.C. nació en 2014 con una convicción: defender los derechos humanos de las mujeres y de las diversidades sexo-genéricas. Desde entonces, hace más de diez años, tejemos redes de apoyo, aprendizaje y resistencia en la Ciudad de México.</p>
   <p>No somos una institución distante: somos personas trabajando con personas. Creemos que el cambio social se construye en el encuentro cotidiano, el diálogo entre iguales y la educación popular.</p>
   <p>Cada taller, conferencia y espacio de diálogo tiene un propósito: enfrentar las violencias estructurales, abrazar la pluralidad y crear entornos donde todas las personas podamos vivir con dignidad.</p>
@@ -185,13 +194,14 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 <section class="card" id="mision" aria-labelledby="t-mision">
   <h2 id="t-mision">Misión y visión</h2>
   <div class="mv">
-    <article><h3>Misión</h3><p>Impulsamos procesos de formación, investigación y divulgación desde la perspectiva de género, los derechos humanos y la interseccionalidad, para promover una cultura de derechos, la equidad de género y sociedades libres de discriminación.</p></article>
-    <article><h3>Visión</h3><p>Ser un referente de cercanía y rigor en la educación comunitaria y la defensa social, y fortalecer redes de empatía y autonomía donde el respeto a las diversidades y a los derechos de las mujeres sea la base de la vida en común.</p></article>
+    <article><img class="mv-art" src="/__l5e/assets-v1/3d8ade69-ce7b-4408-a19b-0b922ae7e5d4/mision-brote.jpg" alt="Ilustración de dos manos abiertas que sostienen una planta brotando junto a un libro abierto" width="816" height="816" loading="lazy"><h3>Misión</h3><p>Impulsamos procesos de formación, investigación y divulgación desde la perspectiva de género, los derechos humanos y la interseccionalidad, para promover una cultura de derechos, la equidad de género y sociedades libres de discriminación.</p></article>
+    <article><img class="mv-art" src="/__l5e/assets-v1/ac23fdf3-033f-441d-89c4-55aa1b655cc0/vision-faro.jpg" alt="Ilustración de un faro en una colina con rayos de luz hacia el horizonte, un camino que sube y un sol saliendo" width="816" height="816" loading="lazy"><h3>Visión</h3><p>Ser un referente de cercanía y rigor en la educación comunitaria y la defensa social, y fortalecer redes de empatía y autonomía donde el respeto a las diversidades y a los derechos de las mujeres sea la base de la vida en común.</p></article>
   </div>
 </section>
 
 <section class="card" id="proyectos" aria-labelledby="t-proyectos">
   <h2 id="t-proyectos">Acompañar y caminar en comunidad</h2>
+  <figure class="art"><img src="/__l5e/assets-v1/77d3751c-5fe7-4b68-8b17-02490f02c8ba/proyectos-investigacion.jpg" alt="Ilustración de un grupo que camina con una lona y una bocina junto a una mesa de trabajo, frente al cielo de la Ciudad de México" width="1280" height="560" loading="lazy"></figure>
   <p>El activismo se sostiene en el cuidado mutuo. En DEGEDI no solo teorizamos: acompañamos procesos sociales y comunitarios en los que personas y grupos encuentran escucha, orientación y herramientas para defender sus derechos.</p>
   <p>También impulsamos proyectos de investigación situada y divulgación, porque creemos que la ciencia, las humanidades y el activismo deben dialogar con la realidad de las calles y generar datos y narrativas útiles para la justicia social.</p>
 </section>
@@ -238,9 +248,9 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
       <a class="btn btn-wa" href="https://wa.me/525541350708?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Belegu%C3%AD" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 9.88 9.89c0 5.45-4.43 9.88-9.89 9.88m8.42-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.47-8.41"/></svg>Contactar a Beleguí por WhatsApp</a>
     </div>
     <div>
-      <h3>Cotización de talleres y otros asuntos</h3>
-      <p><a href="mailto:degediac@gmail.com?subject=Cotizaci%C3%B3n%20de%20taller">degediac@gmail.com</a></p>
-      <a class="btn btn-mail" href="mailto:degediac@gmail.com?subject=Cotizaci%C3%B3n%20de%20taller">Enviar correo para cotización</a>
+      <h3>Talleres y otros asuntos</h3>
+      <p><a href="mailto:degediac@gmail.com?subject=Informaci%C3%B3n%20de%20taller">degediac@gmail.com</a></p>
+      <a class="btn btn-mail" href="mailto:degediac@gmail.com?subject=Informaci%C3%B3n%20de%20taller">Escribir para agendar un taller</a>
     </div>
   </div>
   <p style="margin-top:1.5rem"><strong>Ubicación:</strong> Ciudad de México.</p>
