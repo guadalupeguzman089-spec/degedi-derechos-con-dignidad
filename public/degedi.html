@@ -100,7 +100,15 @@ p{margin:0 0 1rem}
 .gallery figcaption{padding:.6rem .9rem;font-size:.85rem;color:var(--text2)}
 
 .art{margin:0 0 1.25rem;border-radius:16px;overflow:hidden;border:1px solid var(--border)}
-.art img{display:block;width:100%;height:auto}
+.art img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+@media (min-width:700px){.art img{aspect-ratio:16/7}}
+.news{list-style:none;padding:0;margin:1.25rem 0 0;display:grid;gap:1rem}
+@media (min-width:700px){.news{grid-template-columns:1fr 1fr}}
+.news li{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:1.1rem 1.2rem;display:flex;flex-direction:column}
+.news .meta{margin:0 0 .4rem;font-size:.88rem;color:var(--text2)}
+.news h3{margin:0 0 .5rem}
+.news .sum{flex:1;color:var(--text2)}
+.news .note{margin:.4rem 0 0;font-size:.82rem;color:var(--text2)}
 .mv-art{display:block;width:100%;height:150px;object-fit:cover;border-radius:12px;border:1px solid var(--border);margin:0 0 1rem}
 @media (min-width:700px){.mv-art{height:190px}}
 
@@ -135,6 +143,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
     <li><a href="#mision">Misión y visión</a></li>
     <li><a href="#proyectos">Proyectos</a></li>
     <li><a href="#galeria">Galería</a></li>
+    <li><a href="#noticias">Noticias</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
 </nav>
@@ -146,7 +155,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 <section class="card" id="portada" aria-labelledby="t-portada">
   <h1 id="t-portada">Te damos la bienvenida a DEGEDI A.C.</h1>
   <p class="lead">Desde 2014, tejemos redes de apoyo, educación popular y defensa social en la Ciudad de México con perspectiva de género y derechos humanos.</p>
-  <figure class="art"><img src="/__l5e/assets-v1/a32fca2d-81e6-4a95-9c05-e5cc8120d571/portada-comunidad-camino-v2.jpg" alt="Ilustración en colores del orgullo LGBT de un grupo diverso de personas de distintas edades caminando juntas por un camino arcoíris, con banderas del orgullo y de la diversidad trans, y flores de cempasúchil" width="1536" height="640"></figure>
+  <figure class="art"><img src="/img/portada.webp" alt="Calle empedrada de la Ciudad de México con macetas de plantas verdes y buganvilias lilas bajo la luz cálida de la mañana" width="1100" height="619" loading="lazy" decoding="async"></figure>
   <p class="question">¿Qué necesitas hoy?</p>
   <div class="choices">
     <a class="btn btn-primary" href="#beleguí">Necesito acompañamiento</a>
@@ -156,7 +165,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 
 <section class="card" id="beleguí" aria-labelledby="t-belegui">
   <h2 id="t-belegui">Beleguí, una línea para acompañarte</h2>
-  <figure class="art"><img src="/__l5e/assets-v1/b6bb9445-ad8e-4583-b1c0-a2444ceb257d/belegui-escucha-v2.jpg" alt="Ilustración en morado y verde, colores de la lucha contra la violencia de género y de la marea verde por la ILE: una mano que sostiene un teléfono del que salen mensajes vacíos, mientras otra mano con pañuelo verde la acompaña" width="1280" height="560" loading="lazy"></figure>
+  <figure class="art"><img src="/img/belegui.webp" alt="Rincón tranquilo con luz de ventana, una planta verde, una taza de té y una manta lavanda doblada sobre un sillón" width="1100" height="619" loading="lazy" decoding="async"></figure>
   <p>Si vives violencia de género, tienes dudas sobre tu sexualidad, necesitas acompañamiento para una Interrupción Legal del Embarazo (ILE) o quieres hablar de diversidad sexual, en Beleguí encontrarás escucha, orientación y acompañamiento. Escríbenos por WhatsApp al 55 4135 0708.</p>
   <p class="info"><strong>Información de atención:</strong> servicio gratuito, confidencial, abierto las 24 horas y atendido exclusivamente por mensaje.</p>
   <!-- IMPORTANTE: verificar este enlace de WhatsApp (número y mensaje) antes de publicar. -->
@@ -170,7 +179,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 <section class="card" id="talleres" aria-labelledby="t-talleres">
   <h2 id="t-talleres">Formación para la autonomía y el tejido social</h2>
   <p>Compartimos saberes porque creemos que el conocimiento es una herramienta de libertad y de cuidado mutuo. Diseñamos e impartimos talleres, conferencias y capacitaciones para colectivos, instituciones, escuelas, juventudes y público en general, de forma presencial o en línea, sobre sexualidad, género, diversidad sexual, ILE, derechos humanos y bienestar social.</p>
-  <figure class="art"><img src="/__l5e/assets-v1/dcdfcfc1-239a-4d32-bacc-c7695e3ba7b6/talleres-circulo-v2.jpg" alt="Ilustración con los colores del orgullo LGBT de un taller comunitario: ocho personas sentadas en círculo mientras una facilitadora explica junto a un caballete, con una bandera del orgullo y una bandera de la diversidad trans en la sala" width="1280" height="560" loading="lazy"></figure>
+  <figure class="art"><img src="/img/talleres.webp" alt="Sillas de madera vacías en círculo alrededor de un tapete tejido en tonos verdes y morados, en una sala con plantas y luz natural" width="1100" height="619" loading="lazy" decoding="async"></figure>
   <ul class="topics">
     <li><h3>Diversidad sexual y de género</h3><p>Reflexión crítica y práctica para cuestionar mandatos, reconocer las disidencias y construir espacios libres de LGBTfobia.</p></li>
     <li><h3>Interrupción Legal del Embarazo (ILE)</h3><p>Talleres informativos, con perspectiva de derechos y sin estigmas, centrados en la autonomía corporal, la salud y el derecho a decidir sobre nuestros cuerpos.</p></li>
@@ -185,7 +194,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 
 <section class="card" id="quienes" aria-labelledby="t-quienes">
   <h2 id="t-quienes">Hacemos comunidad desde los derechos</h2>
-  <figure class="art"><img src="/__l5e/assets-v1/8d8db9e5-dc9f-4b50-be86-5125576dce76/quienes-manos-red-v2.jpg" alt="Ilustración con los colores del orgullo LGBT de manos de distintos tonos de piel unidas en el centro, bajo una red de puntos conectados por un hilo arcoíris y una bandera de la diversidad trans" width="1280" height="560" loading="lazy"></figure>
+  <figure class="art"><img src="/img/quienes.webp" alt="Manos de distintos tonos de piel unidas sobre una mesa de trabajo, junto a una taza verde y una libreta lavanda; una muñeca lleva una pulsera arcoíris" width="1100" height="619" loading="lazy" decoding="async"></figure>
   <p>DEGEDI A.C. nació en 2014 con una convicción: defender los derechos humanos de las mujeres y de las diversidades sexo-genéricas. Desde entonces, hace más de diez años, tejemos redes de apoyo, aprendizaje y resistencia en la Ciudad de México.</p>
   <p>No somos una institución distante: somos personas trabajando con personas. Creemos que el cambio social se construye en el encuentro cotidiano, el diálogo entre iguales y la educación popular.</p>
   <p>Cada taller, conferencia y espacio de diálogo tiene un propósito: enfrentar las violencias estructurales, abrazar la pluralidad y crear entornos donde todas las personas podamos vivir con dignidad.</p>
@@ -194,14 +203,14 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 <section class="card" id="mision" aria-labelledby="t-mision">
   <h2 id="t-mision">Misión y visión</h2>
   <div class="mv">
-    <article><img class="mv-art" src="/__l5e/assets-v1/ce8d594f-f5fe-48c2-bbaf-3e7ad64ff436/mision-brote-v2.jpg" alt="Ilustración en morado y verde de dos manos abiertas que sostienen una planta brotando junto a un libro abierto" width="816" height="816" loading="lazy"><h3>Misión</h3><p>Impulsamos procesos de formación, investigación y divulgación desde la perspectiva de género, los derechos humanos y la interseccionalidad, para promover una cultura de derechos, la equidad de género y sociedades libres de discriminación.</p></article>
-    <article><img class="mv-art" src="/__l5e/assets-v1/d9a94c94-60c8-4342-95ed-41b02fb66ccc/vision-faro-v2.jpg" alt="Ilustración con los colores del orgullo LGBT de un faro en una colina que emite rayos arcoíris hacia el horizonte, con un camino en los colores de la bandera de la diversidad trans y un sol saliendo" width="816" height="816" loading="lazy"><h3>Visión</h3><p>Ser un referente de cercanía y rigor en la educación comunitaria y la defensa social, y fortalecer redes de empatía y autonomía donde el respeto a las diversidades y a los derechos de las mujeres sea la base de la vida en común.</p></article>
+    <article><img class="mv-art" src="/img/mision.webp" alt="Manos que sostienen un pequeño brote en tierra junto a un libro abierto y ramas de lavanda" width="1024" height="768" loading="lazy" decoding="async"><h3>Misión</h3><p>Impulsamos procesos de formación, investigación y divulgación desde la perspectiva de género, los derechos humanos y la interseccionalidad, para promover una cultura de derechos, la equidad de género y sociedades libres de discriminación.</p></article>
+    <article><img class="mv-art" src="/img/vision.webp" alt="Luz de la mañana entrando por una ventana con plantas, una cortina violeta y un reflejo suave de arcoíris en la pared" width="1024" height="768" loading="lazy" decoding="async"><h3>Visión</h3><p>Ser un referente de cercanía y rigor en la educación comunitaria y la defensa social, y fortalecer redes de empatía y autonomía donde el respeto a las diversidades y a los derechos de las mujeres sea la base de la vida en común.</p></article>
   </div>
 </section>
 
 <section class="card" id="proyectos" aria-labelledby="t-proyectos">
   <h2 id="t-proyectos">Acompañar y caminar en comunidad</h2>
-  <figure class="art"><img src="/__l5e/assets-v1/521f5a90-725f-4462-b54b-e2921d9de032/proyectos-investigacion-v2.jpg" alt="Ilustración en morado y verde de un grupo que camina con una lona y una bocina junto a una mesa de trabajo, frente al cielo de la Ciudad de México" width="1280" height="560" loading="lazy"></figure>
+  <figure class="art"><img src="/img/proyectos.webp" alt="Mesa de trabajo vista desde arriba con documentos, libretas, notas adhesivas, un camino de tela verde y una carpeta morada" width="1100" height="619" loading="lazy" decoding="async"></figure>
   <p>El activismo se sostiene en el cuidado mutuo. En DEGEDI no solo teorizamos: acompañamos procesos sociales y comunitarios en los que personas y grupos encuentran escucha, orientación y herramientas para defender sus derechos.</p>
   <p>También impulsamos proyectos de investigación situada y divulgación, porque creemos que la ciencia, las humanidades y el activismo deben dialogar con la realidad de las calles y generar datos y narrativas útiles para la justicia social.</p>
 </section>
@@ -235,6 +244,26 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
       <figcaption>Mesa informativa en feria universitaria</figcaption>
     </figure>
   </div>
+</section>
+
+<section class="card" id="noticias" aria-labelledby="t-noticias">
+  <h2 id="t-noticias">DEGEDI en las noticias</h2>
+  <ul class="news">
+    <li>
+      <p class="meta">EDUCA (La Minuta) · 5 de agosto de 2022</p>
+      <h3>“Belegui”, una iniciativa que busca proteger mujeres migrantes en el Istmo</h3>
+      <p class="sum">Nota sobre los talleres de DEGEDI sobre violencia sexual con mujeres refugiadas en albergues de Oaxaca y Chiapas.</p>
+      <p><a class="btn btn-mail" href="https://www.educaoaxaca.org/belegui-una-iniciativa-que-busca-proteger-mujeres-migrantes-en-el-istmo/" target="_blank" rel="noopener noreferrer">Leer nota</a></p>
+      <p class="note">Se abre en el sitio del medio.</p>
+    </li>
+    <li>
+      <p class="meta">El Economista · 8 de marzo de 2022</p>
+      <h3>Embajada de Francia reconoce a defensores de los derechos sexuales y reproductivos</h3>
+      <p class="sum">Nota sobre el reconocimiento de la Embajada de Francia a personas defensoras de los derechos sexuales y reproductivos.</p>
+      <p><a class="btn btn-mail" href="https://www.eleconomista.com.mx/internacionales/Embajada-de-Francia-reconoce-a-defensores-de-los-derechos-sexuales-y-reproductivos-20220308-0152.html" target="_blank" rel="noopener noreferrer">Leer nota</a></p>
+      <p class="note">Se abre en el sitio del medio.</p>
+    </li>
+  </ul>
 </section>
 
 <section class="card" id="contacto" aria-labelledby="t-contacto">
