@@ -28,7 +28,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6;padding-bottom:env(safe-area-inset-bottom)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.0625rem;line-height:1.6;padding-bottom:env(safe-area-inset-bottom)}
 a{color:var(--blue)}
 :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
 .skip{position:absolute;left:-9999px;top:0;background:var(--card);color:var(--text);padding:.75rem 1rem;z-index:100}
@@ -109,6 +109,19 @@ p{margin:0 0 1rem}
 .news h3{margin:0 0 .5rem}
 .news .sum{flex:1;color:var(--text2)}
 .news .note{margin:.4rem 0 0;font-size:.82rem;color:var(--text2)}
+
+.exit-tools{display:flex;gap:.35rem;align-items:center}
+.textsize{display:flex;gap:.3rem;align-items:center}
+.textsize button{min-height:44px;min-width:44px;background:var(--exit);color:#fff;border:0;border-radius:10px;padding:.4rem .5rem;font:inherit;font-weight:700;font-size:1rem;cursor:pointer}
+.textsize button:disabled{opacity:.45;cursor:default}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+.faq{list-style:none;padding:0;margin:1.25rem 0 0;display:grid;gap:1rem}
+@media (min-width:700px){.faq{grid-template-columns:1fr 1fr}}
+.faq li{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:1.1rem 1.2rem}
+.faq h3{margin:0 0 .4rem;font-size:1.1rem}
+.faq p{margin:0;color:var(--text2)}
+
 .mv-art{display:block;width:100%;height:150px;object-fit:cover;border-radius:12px;border:1px solid var(--border);margin:0 0 1rem}
 @media (min-width:700px){.mv-art{height:190px}}
 
@@ -124,9 +137,16 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
 <a class="skip" href="#contenido">Saltar al contenido</a>
 
 <div class="exitbar">
-  <button type="button" class="exit" id="salida" aria-label="Salida rápida: salir de este sitio de inmediato (atajo: presiona Esc dos veces)">
-    Salida rápida <small>(Esc Esc)</small>
-  </button>
+  <div class="exit-tools">
+    <div class="textsize" role="group" aria-label="Tamaño de letra">
+      <button type="button" id="letra-menos" aria-label="Disminuir el tamaño de la letra" aria-controls="aviso-letra">A−</button>
+      <button type="button" id="letra-mas" aria-label="Aumentar el tamaño de la letra" aria-controls="aviso-letra">A+</button>
+    </div>
+    <button type="button" class="exit" id="salida" aria-label="Salida rápida: salir de este sitio de inmediato (atajo: presiona Esc dos veces)">
+      Salida rápida <small>(Esc Esc)</small>
+    </button>
+  </div>
+  <p class="sr-only" id="aviso-letra" aria-live="polite"></p>
 </div>
 
 <header class="site" id="inicio">
@@ -138,6 +158,7 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
   <ul>
     <li><a href="#portada">Inicio</a></li>
     <li><a href="#beleguí">Beleguí</a></li>
+    <li><a href="#preguntas">Preguntas frecuentes</a></li>
     <li><a href="#talleres">Talleres</a></li>
     <li><a href="#quienes">Quiénes somos</a></li>
     <li><a href="#mision">Misión y visión</a></li>
