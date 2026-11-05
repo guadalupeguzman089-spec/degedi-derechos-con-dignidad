@@ -44,8 +44,8 @@ HTML semántico (header, nav, main, section, footer), jerarquía de encabezados 
 ## REGLAS DE CONTENIDO
 - Usa EXACTAMENTE los textos de abajo. Puedes decidir la maquetación, pero no reescribas ni agregues contenido propio.
 - NO inventes testimonios, cifras, nombres de instituciones aliadas, fotografías, horarios, precios ni servicios. No agregues datos que no estén aquí.
-- Las ilustraciones decorativas de las secciones (src/assets/*.asset.json, prefijo portada-/belegui-/talleres-/quienes-/mision-/vision-/proyectos-) son ilustraciones generadas, no fotografías de actividades reales: no las presentes como documentación. Las fotografías reales solo van en la galería.
-- Paleta de las ilustraciones según el tema: violencia de género e ILE (Beleguí, Misión, Proyectos) en morado y verde; diversidad sexual LGBT (Portada, Talleres, Quiénes somos, Visión) en colores del orgullo arcoíris con toques celeste y rosa de la bandera trans. Deben aludir al tema (pañuelo verde, puño morado, banderas del orgullo), mantener el fondo crema y no llevar texto dentro.
+- Las imágenes de apoyo de las secciones (public/img/*.webp, < 150 KB, guardadas dentro del proyecto) son fotografías generadas, no fotos de actividades reales: no las presentes como documentación. Las fotografías reales solo van en la galería.
+- Estilo de las imágenes de apoyo: foto realista con luz cálida (manos, mesas, sillas en círculo, plantas, ventanas, calles, textiles), sin rostros reconocibles, sin víctimas ni infancias; Beleguí siempre serena. Verdes y morados como acento; detalle arcoíris sutil en máximo dos imágenes. Nunca ilustraciones.
 - No uses comillas ni apóstrofes rectos dentro del texto visible; usa tipografía correcta.
 
 ## TEXTOS
