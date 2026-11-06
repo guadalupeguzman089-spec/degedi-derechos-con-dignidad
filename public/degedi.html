@@ -197,6 +197,23 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
   <p class="small-center">Si compartes este dispositivo, considera borrar el historial de navegación.</p>
 </section>
 
+<section class="card" id="preguntas" aria-labelledby="t-preguntas">
+  <h2 id="t-preguntas">Preguntas frecuentes</h2>
+  <figure class="art"><img src="/img/preguntas.webp" alt="Mesa de madera junto a una ventana con luz cálida: un teléfono, una planta verde, una taza morada de té y una manta tejida morada" width="1100" height="629" loading="lazy" decoding="async"></figure>
+  <ul class="faq">
+    <li><h3>¿Qué es Beleguí?</h3><p>Es la línea de acompañamiento de DEGEDI. Puedes escribirnos si vives violencia de género, tienes dudas sobre tu sexualidad, necesitas acompañamiento para una Interrupción Legal del Embarazo (ILE) o quieres hablar de diversidad sexual.</p></li>
+    <li><h3>¿Cuánto cuesta?</h3><p>Nada. Es un servicio gratuito.</p></li>
+    <li><h3>¿Es confidencial?</h3><p>Sí.</p></li>
+    <li><h3>¿Me van a llamar o puedo llamar?</h3><p>Beleguí se atiende solo por mensaje, por WhatsApp, al 55 4135 0708. Está abierta las 24 horas.</p></li>
+    <li><h3>¿Tengo que dar mi nombre?</h3><p>No, pueden escribir sin dar su nombre real o datos personales.</p></li>
+    <li><h3>¿Quién me va a contestar?</h3><p>Personas del equipo con formación en el tema de primeros auxilios psicológicos.</p></li>
+    <li><h3>¿Cuánto tardan en responder?</h3><p>Respondemos lo antes posible. Si es una emergencia, <a href="tel:911">llama al 911</a>.</p></li>
+    <li><h3>¿Qué incluye el acompañamiento para una ILE?</h3><p>Orientación, información, acompañamiento, insumos en caso de ser posible y canalización si es necesaria.</p></li>
+    <li><h3>¿Atienden a cualquier persona?</h3><p>Sí, atendemos a todas las personas.</p></li>
+    <li><h3>¿Y si estoy en peligro ahora mismo?</h3><p><a href="tel:911">Llama al 911</a>.</p></li>
+  </ul>
+</section>
+
 <section class="card" id="talleres" aria-labelledby="t-talleres">
   <h2 id="t-talleres">Formación para la autonomía y el tejido social</h2>
   <p>Compartimos saberes porque creemos que el conocimiento es una herramienta de libertad y de cuidado mutuo. Diseñamos e impartimos talleres, conferencias y capacitaciones para colectivos, instituciones, escuelas, juventudes y público en general, de forma presencial o en línea, sobre sexualidad, género, diversidad sexual, ILE, derechos humanos y bienestar social.</p>
@@ -330,6 +347,21 @@ footer{max-width:960px;margin:0 auto;padding:1rem 1rem 2.5rem;text-align:center;
       last = now;
     }
   });
+
+  // Tamaño de letra: sólo cambia la escala de la página; no se guarda nada.
+  var pasos = [100, 115, 130, 150], i = 0;
+  var menos = document.getElementById("letra-menos");
+  var mas = document.getElementById("letra-mas");
+  var aviso = document.getElementById("aviso-letra");
+  function aplicar(){
+    document.documentElement.style.fontSize = pasos[i] + "%";
+    menos.disabled = i === 0;
+    mas.disabled = i === pasos.length - 1;
+    aviso.textContent = "Tamaño de letra: " + pasos[i] + " %";
+  }
+  menos.addEventListener("click", function(){ if (i > 0) { i--; aplicar(); } });
+  mas.addEventListener("click", function(){ if (i < pasos.length - 1) { i++; aplicar(); } });
+  menos.disabled = true;
 })();
 </script>
 </body>
