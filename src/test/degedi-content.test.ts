@@ -20,8 +20,21 @@ describe("DEGEDI site content rules", () => {
     expect(html.match(/subject=Informaci%C3%B3n%20de%20taller/g)).toHaveLength(4);
   });
 
+  it("offers buttons to enlarge and reduce the text", () => {
+    expect(html).toContain('id="letra-mas"');
+    expect(html).toContain('id="letra-menos"');
+  });
+
+  it("answers that Beleguí is free and points to 911 in the FAQ", () => {
+    const faq = html.match(/<section[^>]*id="preguntas"[\s\S]*?<\/section>/)?.[0] ?? "";
+    expect(faq.match(/<li>/g)).toHaveLength(10);
+    expect(faq).toContain("Nada. Es un servicio gratuito.");
+    expect(faq).toContain("55 4135 0708");
+    expect(faq).toContain("911");
+  });
+
   it("carries an image in every text-only section", () => {
-    for (const id of ["portada", "beleguí", "talleres", "quienes", "mision", "proyectos"]) {
+    for (const id of ["portada", "preguntas", "beleguí", "talleres", "quienes", "mision", "proyectos"]) {
       const section = html.match(new RegExp(`<section[^>]*id="${id}"[\\s\\S]*?</section>`))?.[0];
       expect(section, `section ${id} is missing`).toBeDefined();
       expect(section).toContain("<img");
